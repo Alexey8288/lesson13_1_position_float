@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-size: 30px;
+    color: white;
+}
+
+.parent {
+    width: 50%;
+    background-color: darkmagenta;
+    padding: 50px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.box {
+    // *блок занимает 100% своего родителя
+    width: 100%;
+
+    height: 100px;
+}
+
+.box1 {
+    background-color: red;
+    // *можем двигать блок
+
+    // position: relative;
+    // *визически блок остается на своем месте, 
+    // *сдвигается только визуально
+    // top: 50px;
+    // left: 100px;
+    // если напишем так, все сдвинется вниз
+    // margin-top: 50px;
+
+    // *блок полностью теряет свое положение
+    // *его место занимает блок 2 
+    // *блок 1 находится сверху, над ним
+    position: absolute;
+    // *занимает левый верхний угол,
+    // *от родителя parent (в нем указали position: relative;)
+    // *если не укажем будет от body
+    // top: 0;
+    // left: 0;
+
+    // *сбрасывает заданную ширину
+    width: unset;
+
+    // !центрируем блок 1 в блоке Родитель
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.small-block1 {
+    position: absolute;
+    background-color: yellowgreen;
+   bottom: 0;
+    left: 0;        
+}
+
+.box2 {
+    background-color: green;
+
+
+}
+
+.box3 {
+    background-color: blue;
+}
+
+.box4 {
+    background-color: orange;
+    // !позиционирует относительно окна браузера
+        position: fixed;
+            bottom: 0;
+            left: 0;
+            
+}
+
+.small-block2 {
+        position: absolute;
+            background-color: yellowgreen;
+        top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+
+.box5 {
+    background-color: greenyellow;
+}
+
+
+.test {
+       background-color: chartreuse;
+    margin: 0 auto;
+        max-width: 800px;
+
+}
+.picture {
+    // float: left;
+    float: right;
+    
+   
+
+}
+
+.img {
+max-width: 300px;
+}
+
+.text {}
