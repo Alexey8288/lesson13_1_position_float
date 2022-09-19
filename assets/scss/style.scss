@@ -5,18 +5,31 @@
 }
 
 body {
+ /* !основной шрифт и жирность подключаем в body */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   color: white;
-
   font-size: 30px;
+}
+
+.btn {
+ font-size: 70px;
+}
+.btn:hover {
+  color: red;
+}
+
+.container-button {
+  width: 50%;
+  margin: 10px auto;
+   text-align: center;
 }
 
 .parent {
   position: relative;
-
   width: 50%;
-  margin: 100px auto;
+  margin: 20px auto;
   padding: 50px;
-
   background-color: darkmagenta;
 }
 
